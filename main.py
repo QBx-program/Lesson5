@@ -46,3 +46,9 @@ print(*tupple_new)
 src = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
 
 print([n for i, n in enumerate(src) if n > src[i - 1]])
+
+# Задача 5
+
+src = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
+res = [n for n in src if src.count(n) == 1]
+print(res)
