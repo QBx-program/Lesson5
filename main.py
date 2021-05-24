@@ -14,3 +14,10 @@ odd_to = odd_nums(get_num)
 
 for i in range(1, get_num+1, 2):
     print(next(odd_to))
+
+# Задача 2
+
+odd_to_2 = (num for num in range(1, get_num+1, 2))
+
+for i in range(1, get_num + 1, 2):
+    print(next(odd_to_2))
