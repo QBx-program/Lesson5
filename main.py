@@ -40,3 +40,9 @@ tupple_new = ((v_1, v_2) for v_1, v_2 in zip(tutors, klasses))
 
 print(f'Это генератор: {type(tupple_new)}')
 print(*tupple_new)
+
+# Задача 4
+
+src = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
+
+print([n for i, n in enumerate(src) if n > src[i - 1]])
