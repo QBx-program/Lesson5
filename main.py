@@ -34,7 +34,7 @@ klasses = [
 
 gen = [None for i in range(len(tutors) - len(klasses)) if len(tutors) - len(klasses) > 0]
 klasses.extend((i for i in gen))
-tupple_new = ((v_1, v_2) for v_1, v_2 in zip(tutors, klasses))
+tupple_new = ((v_1, v_2) if (len(tutors) - len(klasses) >= 0) else(v_2, None) for v_1, v_2 in zip(tutors, klasses))
 
 print(f'Это генератор: {type(tupple_new)}')
 print(*tupple_new)
